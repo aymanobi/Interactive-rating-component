@@ -41,7 +41,7 @@ function App() {
               })}
             </ul>
 
-            <button className='bg-Orange hover:bg-White hover:text-Orange transition rounded-3xl py-2 border-none outline-none' onClick={handleClick}>
+            <button type='submit' className='bg-Orange hover:bg-White hover:text-Orange transition rounded-3xl py-2 border-none outline-none' onClick={handleClick}>
               Submit
             </button>
           </>
