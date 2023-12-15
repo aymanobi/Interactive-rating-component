@@ -36,7 +36,7 @@ function App() {
             <ul className='flex items-center justify-between gap-5 my-3'>
               {num_arr.map(num => {
                 return (
-                  <li key={num} className={`w-9 h-9 rounded-full ${selected === num ? 'bg-Orange' : 'bg-LightGrey'} hover:bg-Orange flex items-center justify-center cursor-pointer`} value={num} onClick={(e) => { setRate(e.target.value), setSelected(num) }}>{num}</li>
+                  <li key={num} className={`w-9 h-9 rounded-full ${selected === num ? 'bg-Orange' : 'bg-LightGrey'} hover:bg-Orange flex items-center justify-center cursor-pointer`} data-value={num} onClick={(e) => { setRate(e.target.value), setSelected(num) }}>{num}</li>
                 )
               })}
             </ul>
